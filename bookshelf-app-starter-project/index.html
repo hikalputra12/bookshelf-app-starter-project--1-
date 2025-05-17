@@ -20,15 +20,15 @@
         <form id="bookForm" data-testid="bookForm">
           <div>
             <label for="bookFormTitle">Judul</label>
-            <input id="bookFormTitle" name="judul" type="text" required minlength="3" pattern="[A-Za-z0-9\s]+" data-testid="bookFormTitleInput" aria-describedby="titleValidation"/>
+            <input id="bookFormTitle" name="judul" type="text" id="judul" autocomplete="judul" required minlength="3" pattern="[A-Za-z0-9\s]+" data-testid="bookFormTitleInput" aria-describedby="titleValidation"/>
           </div>
           <div>
             <label for="bookFormAuthor">Penulis</label>
-            <input id="bookFormAuthor" type="text" name="penulis" minlength="3" required data-testid="bookFormAuthorInput" required />
+            <input id="bookFormAuthor" type="text" name="penulis" id="penulis" autocomplete="penulis" minlength="3" required data-testid="bookFormAuthorInput" required />
           </div>
           <div>
             <label for="bookFormYear">Tahun</label>
-            <input id="bookFormYear" type="number" name="tahun" required data-testid="bookFormYearInput" />
+            <input id="bookFormYear" type="number" name="tahun" id = "tahun" autocomplete="tahun" data-testid="bookFormYearInput" />
           </div>
           <div >
             <label for="bookFormIsComplete">Selesai dibaca</label>
@@ -48,7 +48,7 @@
         <h2>Cari Buku</h2>
         <form id="searchBook" data-testid="searchBookForm">
           <label for="searchBookTitle">Judul</label>
-          <input id="searchBookTitle" type="text" name="cari" data-testid="searchBookFormTitleInput" />
+          <input id="searchBookTitle" type="text" name="cari" id="cari" autocomplete="cari" data-testid="searchBookFormTitleInput" />
           <button class = "button-field" id="searchSubmit" type="submit" data-testid="searchBookFormSubmitButton">
             Cari
           </button>

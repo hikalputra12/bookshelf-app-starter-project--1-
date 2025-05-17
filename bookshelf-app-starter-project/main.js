@@ -16,9 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const bookFormTitle = document.getElementById("bookFormTitle");
   const bookFormAuthor = document.getElementById("bookFormAuthor");
   const bookFormYear = document.getElementById("bookFormYear");
-  const bookFormSubmit = document.getElementById("bookFormSubmit");
   const bookForm = document.getElementById("bookForm");
-  
+
 // menerapkan realtime validasi
 
   const customValidationJudulHandler = (event) => {

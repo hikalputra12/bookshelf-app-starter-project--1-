@@ -57,6 +57,53 @@ h2{
   align-items: center;
 }
 
+#incompleteBookList{
+  margin-block: 1rem;
+ 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+ 
+  column-gap: 24px;
+  row-gap: 32px;
+}
+
+#completeBookList{
+  margin-block: 1rem;
+ 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+ 
+  column-gap: 24px;
+  row-gap: 32px;
+}
+
+.book-item {
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 16px;
+ 
+  overflow: hidden;
+  transition: all 150ms ease-in;
+}
+
+@media screen and (max-width: 1200px) {
+  #incompleteBookList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #completeBookList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+ 
+@media screen and (max-width: 992px) {
+  #incompleteBookList {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #completeBookList {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 
 
 

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf App</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+
+  </head>
+  <body>
+    <header>
+      <h1>Bookshelf App</h1>
+    </header>
+
+    <main>
+      <add-book></add-book>
+      <search-book></search-book>
+
+      <section class="form">
+        <h2>Belum selesai dibaca</h2>
+
+        <div id="incompleteBookList" data-testid="incompleteBookList" >
+
+        </div>
+      </section>
+
+      <section class="form">
+        <h2>Selesai dibaca</h2>
+
+        <div id="completeBookList" data-testid="completeBookList" >
+        </div>
+      </section>
+    </main>
+    <script type = "module" src="mains.js"></script>
+    <script type = "text/javascript" src="main.js"></script>
+  </body>
+</html>

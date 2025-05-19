@@ -36,6 +36,8 @@ button{
   border-radius:5px;
   background-color: #970747;
   color: white;
+  font-size:9.5px;
+  margin:1px;
 }
 .button-field {
   width:100%;
